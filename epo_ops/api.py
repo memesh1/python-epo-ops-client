@@ -27,7 +27,7 @@ class Client(object):
     __register_search_path__ = 'register/search'
 
     def __init__(
-        self, key, secret, accept_type='xml', middlewares=None
+        self, key, secret, accept_type='json', middlewares=None
     ):
         self.accept_type = 'application/{0}'.format(accept_type)
         self.middlewares = middlewares
